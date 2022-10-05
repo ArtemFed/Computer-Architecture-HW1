@@ -16,10 +16,7 @@ Task:
 	movq	%rdx, -40(%rbp)
 	movl	$1, -8(%rbp)
 	cmpl	$0, -28(%rbp)
-	jne	.L2
-	movl	$0, %eax
-	jmp	.L3
-.L2:
+	je	.L6
 	movq	-24(%rbp), %rax
 	movl	(%rax), %edx
 	movq	-40(%rbp), %rax
@@ -54,8 +51,10 @@ Task:
 	subl	$1, %eax
 	cmpl	%eax, -4(%rbp)
 	jl	.L5
-	movl	-8(%rbp), %eax
-.L3:
+	jmp	.L1
+.L6:
+	nop
+.L1:
 	popq	%rbp
 	.cfi_def_cfa 7, 8
 	ret
@@ -73,10 +72,8 @@ Task:
 .LC3:
 	.string	"A[%d] = "
 .LC4:
-	.string	"Nothing to print!"
-.LC5:
 	.string	"Result B: "
-.LC6:
+.LC5:
 	.string	"%d "
 	.text
 	.globl	main
@@ -95,7 +92,7 @@ main:
 	pushq	%r13
 	pushq	%r12
 	pushq	%rbx
-	subq	$104, %rsp
+	subq	$88, %rsp
 	.cfi_offset 15, -24
 	.cfi_offset 14, -32
 	.cfi_offset 13, -40
@@ -110,36 +107,36 @@ main:
 	leaq	.LC0(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
-	leaq	-100(%rbp), %rax
+	leaq	-96(%rbp), %rax
 	movq	%rax, %rsi
 	leaq	.LC1(%rip), %rdi
 	movl	$0, %eax
 	call	__isoc99_scanf@PLT
-	movl	-100(%rbp), %eax
+	movl	-96(%rbp), %eax
 	testl	%eax, %eax
-	jle	.L7
-	movl	-100(%rbp), %eax
-	cmpl	$20, %eax
 	jle	.L8
-.L7:
-	movl	-100(%rbp), %eax
+	movl	-96(%rbp), %eax
+	cmpl	$20, %eax
+	jle	.L9
+.L8:
+	movl	-96(%rbp), %eax
 	movl	%eax, %esi
 	leaq	.LC2(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
 	movl	$1, %eax
-	jmp	.L9
-.L8:
-	movl	-100(%rbp), %eax
+	jmp	.L10
+.L9:
+	movl	-96(%rbp), %eax
 	movslq	%eax, %rdx
 	subq	$1, %rdx
 	movq	%rdx, -88(%rbp)
 	movslq	%eax, %rdx
+	movq	%rdx, -112(%rbp)
+	movq	$0, -104(%rbp)
+	movslq	%eax, %rdx
 	movq	%rdx, -128(%rbp)
 	movq	$0, -120(%rbp)
-	movslq	%eax, %rdx
-	movq	%rdx, -144(%rbp)
-	movq	$0, -136(%rbp)
 	cltq
 	leaq	0(,%rax,4), %rdx
 	movl	$16, %eax
@@ -154,31 +151,31 @@ main:
 	movq	%rsp, %rcx
 	subq	%rdx, %rcx
 	movq	%rcx, %rdx
-.L10:
+.L11:
 	cmpq	%rdx, %rsp
-	je	.L11
+	je	.L12
 	subq	$4096, %rsp
 	orq	$0, 4088(%rsp)
-	jmp	.L10
-.L11:
+	jmp	.L11
+.L12:
 	movq	%rax, %rdx
 	andl	$4095, %edx
 	subq	%rdx, %rsp
 	movq	%rax, %rdx
 	andl	$4095, %edx
 	testq	%rdx, %rdx
-	je	.L12
+	je	.L13
 	andl	$4095, %eax
 	subq	$8, %rax
 	addq	%rsp, %rax
 	orq	$0, (%rax)
-.L12:
+.L13:
 	movq	%rsp, %rax
 	addq	$3, %rax
 	shrq	$2, %rax
 	salq	$2, %rax
 	movq	%rax, -80(%rbp)
-	movl	-100(%rbp), %eax
+	movl	-96(%rbp), %eax
 	movslq	%eax, %rdx
 	subq	$1, %rdx
 	movq	%rdx, -72(%rbp)
@@ -202,39 +199,39 @@ main:
 	movq	%rsp, %rcx
 	subq	%rdx, %rcx
 	movq	%rcx, %rdx
-.L13:
+.L14:
 	cmpq	%rdx, %rsp
-	je	.L14
+	je	.L15
 	subq	$4096, %rsp
 	orq	$0, 4088(%rsp)
-	jmp	.L13
-.L14:
+	jmp	.L14
+.L15:
 	movq	%rax, %rdx
 	andl	$4095, %edx
 	subq	%rdx, %rsp
 	movq	%rax, %rdx
 	andl	$4095, %edx
 	testq	%rdx, %rdx
-	je	.L15
+	je	.L16
 	andl	$4095, %eax
 	subq	$8, %rax
 	addq	%rsp, %rax
 	orq	$0, (%rax)
-.L15:
+.L16:
 	movq	%rsp, %rax
 	addq	$3, %rax
 	shrq	$2, %rax
 	salq	$2, %rax
 	movq	%rax, -64(%rbp)
-	movl	$0, -96(%rbp)
-	jmp	.L16
-.L17:
-	movl	-96(%rbp), %eax
+	movl	$0, -92(%rbp)
+	jmp	.L17
+.L18:
+	movl	-92(%rbp), %eax
 	movl	%eax, %esi
 	leaq	.LC3(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
-	movl	-96(%rbp), %eax
+	movl	-92(%rbp), %eax
 	cltq
 	leaq	0(,%rax,4), %rdx
 	movq	-80(%rbp), %rax
@@ -243,55 +240,46 @@ main:
 	leaq	.LC1(%rip), %rdi
 	movl	$0, %eax
 	call	__isoc99_scanf@PLT
-	addl	$1, -96(%rbp)
-.L16:
-	movl	-100(%rbp), %eax
-	cmpl	%eax, -96(%rbp)
-	jl	.L17
-	movl	-100(%rbp), %ecx
+	addl	$1, -92(%rbp)
+.L17:
+	movl	-96(%rbp), %eax
+	cmpl	%eax, -92(%rbp)
+	jl	.L18
+	movl	-96(%rbp), %ecx
 	movq	-64(%rbp), %rdx
 	movq	-80(%rbp), %rax
 	movl	%ecx, %esi
 	movq	%rax, %rdi
 	call	Task
-	movl	%eax, -92(%rbp)
-	cmpl	$0, -92(%rbp)
-	jne	.L18
 	leaq	.LC4(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
+	movl	$0, -92(%rbp)
 	jmp	.L19
-.L18:
-	leaq	.LC5(%rip), %rdi
-	movl	$0, %eax
-	call	printf@PLT
-	movl	$0, -96(%rbp)
-	jmp	.L20
-.L21:
+.L20:
 	movq	-64(%rbp), %rax
-	movl	-96(%rbp), %edx
+	movl	-92(%rbp), %edx
 	movslq	%edx, %rdx
 	movl	(%rax,%rdx,4), %eax
 	movl	%eax, %esi
-	leaq	.LC6(%rip), %rdi
+	leaq	.LC5(%rip), %rdi
 	movl	$0, %eax
 	call	printf@PLT
-	addl	$1, -96(%rbp)
-.L20:
+	addl	$1, -92(%rbp)
+.L19:
 	movl	-96(%rbp), %eax
-	cmpl	-92(%rbp), %eax
-	jl	.L21
+	cmpl	%eax, -92(%rbp)
+	jl	.L20
 	movl	$10, %edi
 	call	putchar@PLT
-.L19:
 	movl	$0, %eax
-.L9:
+.L10:
 	movq	%rbx, %rsp
 	movq	-56(%rbp), %rbx
 	xorq	%fs:40, %rbx
-	je	.L23
+	je	.L22
 	call	__stack_chk_fail@PLT
-.L23:
+.L22:
 	leaq	-40(%rbp), %rsp
 	popq	%rbx
 	popq	%r12
