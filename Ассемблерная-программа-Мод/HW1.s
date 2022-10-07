@@ -55,15 +55,15 @@ Task:
 	.size	Task, .-Task
 	.section	.rodata
 	.align 8
-.LC0:
+.LC0: // Текст для вывода запроса о длине массива
 	.string	"Input length (0 < length <= %d): "
-.LC1:
+.LC1: // Аргумент для получения и записи длины массива
 	.string	"%d"
-.LC2:
+.LC2: // Текст для вывода при неверном введённом значении длины массива
 	.string	"Incorrect length = %d\n"
-.LC3:
+.LC3: // Текст для вывода запроса i-ого элемента массива А
 	.string	"A[%d] = "
-.LC4:
+.LC4: // Текст для вывода результирующего массива B
 	.string	"Result B: "
 .LC5:
 	.string	"%d "
@@ -79,21 +79,21 @@ main:
 	push	r12
 	push	rbx
 	sub	rsp, 88
-	mov	rax, QWORD PTR fs:40
+	mov	rax, QWORD PTR fs:40	// QWORD указатель на 
 	mov	QWORD PTR -56[rbp], rax
 	xor	eax, eax
 	mov	rax, rsp
 	mov	rbx, rax
 	mov	esi, 20
-	lea	rdi, .LC0[rip]
+	lea	rdi, .LC0[rip]	// Аргумент для printf
 	mov	eax, 0
-	call	printf@PLT
-	lea	rax, -96[rbp]
+	call	printf@PLT	// Вызов printf
+	lea	rax, -96[rbp]	// -96 - это переменная length
 	mov	rsi, rax
-	lea	rdi, .LC1[rip]
-	mov	eax, 0
-	call	__isoc99_scanf@PLT
-	mov	eax, DWORD PTR -96[rbp]
+	lea	rdi, .LC1[rip]	// Аргумент для scanf
+	mov	eax, 0	 
+	call	__isoc99_scanf@PLT	// Вызов scanf и запись значения в length	
+	mov	eax, DWORD PTR -96[rbp] // Считывание длины от length и запись
 	test	eax, eax
 	jle	.L8
 	mov	eax, DWORD PTR -96[rbp]
@@ -102,9 +102,9 @@ main:
 .L8:
 	mov	eax, DWORD PTR -96[rbp]
 	mov	esi, eax
-	lea	rdi, .LC2[rip]
+	lea	rdi, .LC2[rip] // Передача аргумента в printf
 	mov	eax, 0
-	call	printf@PLT
+	call	printf@PLT // Вывод ошибки при некорректном length
 	mov	eax, 1
 	jmp	.L10
 .L9:
