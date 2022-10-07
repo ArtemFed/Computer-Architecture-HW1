@@ -55,15 +55,15 @@ Task:
 	.size	Task, .-Task
 	.section	.rodata
 	.align 8
-.LC0: // Текст для вывода запроса о длине массива
+.LC0: 	// Текст для вывода запроса о длине массива
 	.string	"Input length (0 < length <= %d): "
-.LC1: // Аргумент для получения и записи длины массива
+.LC1: 	// Аргумент для получения и записи длины массива
 	.string	"%d"
-.LC2: // Текст для вывода при неверном введённом значении длины массива
+.LC2: 	// Текст для вывода при неверном введённом значении длины массива
 	.string	"Incorrect length = %d\n"
-.LC3: // Текст для вывода запроса i-ого элемента массива А
+.LC3: 	// Текст для вывода запроса i-ого элемента массива А
 	.string	"A[%d] = "
-.LC4: // Текст для вывода результирующего массива B
+.LC4: 	// Текст для вывода результирующего массива B
 	.string	"Result B: "
 .LC5:
 	.string	"%d "
@@ -94,12 +94,12 @@ main:
 	mov	eax, 0	 
 	call	__isoc99_scanf@PLT	// Вызов scanf и запись значения в length	
 	mov	eax, DWORD PTR -96[rbp] // Считывание длины от length и запись
-	test	eax, eax
-	jle	.L8
+	test	eax, eax // Срабатывает if (length < 1)
+	jle	.L8 // Если if дал true
 	mov	eax, DWORD PTR -96[rbp]
-	cmp	eax, 20
-	jle	.L9
-.L8:
+	cmp	eax, 20 // Срабатывает if (length > max_size)
+	jle	.L9 // Если if дал false, сработал else
+.L8: 	// Сработал true; Выброс ошибки
 	mov	eax, DWORD PTR -96[rbp]
 	mov	esi, eax
 	lea	rdi, .LC2[rip] // Передача аргумента в printf
@@ -107,36 +107,36 @@ main:
 	call	printf@PLT // Вывод ошибки при некорректном length
 	mov	eax, 1
 	jmp	.L10
-.L9:
+.L9:	// Сработал else; Начало создания массивов А и В
 	mov	eax, DWORD PTR -96[rbp]
 	movsx	rdx, eax
-	sub	rdx, 1
+	sub	rdx, 1 // Вычетание 1 из значения length
 	mov	QWORD PTR -88[rbp], rdx
 	movsx	rdx, eax
-	mov	QWORD PTR -112[rbp], rdx
+	mov	QWORD PTR -112[rbp], rdx // Создание массива А
 	mov	QWORD PTR -104[rbp], 0
 	movsx	rdx, eax
-	mov	QWORD PTR -128[rbp], rdx
+	mov	QWORD PTR -128[rbp], rdx // Создание массива В
 	mov	QWORD PTR -120[rbp], 0
 	cdqe
-	lea	rdx, 0[0+rax*4]
+	lea	rdx, 0[0+rax*4]	// !!! ЧТО ЭТО??? !!!
 	mov	eax, 16
 	sub	rax, 1
 	add	rax, rdx
 	mov	esi, 16
 	mov	edx, 0
-	div	rsi
-	imul	rax, rax, 16
+	div	rsi		// !!! ЧТО ЭТО??? !!!
+	imul	rax, rax, 16	// !!! ЧТО ЭТО??? !!!
 	mov	rdx, rax
-	and	rdx, -4096
+	and	rdx, -4096	// !!! ЧТО ЭТО??? !!!
 	mov	rcx, rsp
 	sub	rcx, rdx
 	mov	rdx, rcx
 .L11:
 	cmp	rsp, rdx
 	je	.L12
-	sub	rsp, 4096
-	or	QWORD PTR 4088[rsp], 0
+	sub	rsp, 4096	// !!! ЧТО ЭТО??? !!!
+	or	QWORD PTR 4088[rsp], 0	// !!! ЧТО ЭТО??? !!!
 	jmp	.L11
 .L12:
 	mov	rdx, rax
@@ -206,7 +206,7 @@ main:
 	mov	QWORD PTR -64[rbp], rax
 	mov	DWORD PTR -92[rbp], 0
 	jmp	.L17
-.L18:
+.L18:	// Цикл for для считывания элементов А
 	mov	eax, DWORD PTR -92[rbp]
 	mov	esi, eax
 	lea	rdi, .LC3[rip]
@@ -225,19 +225,19 @@ main:
 .L17:
 	mov	eax, DWORD PTR -96[rbp]
 	cmp	DWORD PTR -92[rbp], eax
-	jl	.L18
+	jl	.L18 	// Запуск for для считывания элементов А
 	mov	ecx, DWORD PTR -96[rbp]
 	mov	rdx, QWORD PTR -64[rbp]
 	mov	rax, QWORD PTR -80[rbp]
 	mov	esi, ecx
 	mov	rdi, rax
-	call	Task
-	lea	rdi, .LC4[rip]
+	call	Task	// ВЫЗОВ ФУНКЦИИ Task !
+	lea	rdi, .LC4[rip] // Вывод 
 	mov	eax, 0
 	call	printf@PLT
 	mov	DWORD PTR -92[rbp], 0
 	jmp	.L19
-.L20:
+.L20:	// Цикл for для вывода элементов B
 	mov	rax, QWORD PTR -64[rbp]
 	mov	edx, DWORD PTR -92[rbp]
 	movsx	rdx, edx
@@ -250,17 +250,17 @@ main:
 .L19:
 	mov	eax, DWORD PTR -96[rbp]
 	cmp	DWORD PTR -92[rbp], eax
-	jl	.L20
+	jl	.L20 // Вызов Цикла for для считывания элементов А
 	mov	edi, 10
 	call	putchar@PLT
 	mov	eax, 0
-.L10:
+.L10:	// return 1;
 	mov	rsp, rbx
 	mov	rbx, QWORD PTR -56[rbp]
 	xor	rbx, QWORD PTR fs:40
 	je	.L22
 	call	__stack_chk_fail@PLT
-.L22:
+.L22:	// Очистка памяти
 	lea	rsp, -40[rbp]
 	pop	rbx
 	pop	r12
