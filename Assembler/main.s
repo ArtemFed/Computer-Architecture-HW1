@@ -50,18 +50,17 @@ main:
 	mov	rbx, rax
 	mov	rax, QWORD PTR -192[rbp]	# сохраняем значение argv[0]
 	add	rax, 8	# сдвигаемся на argv[1], чтобы прочитать аргумент командной строки
-	mov	rax, QWORD PTR [rax] 
-	movzx	eax, BYTE PTR [rax]
-	movsx	eax, al
-	sub	eax, 48	# eax = *argv[1] - '0';
+	mov rax, QWORD PTR [rax]
+	mov rdi, rax
+	call atoi@PLT
 	mov	DWORD PTR -148[rbp], eax	# length = eax => (-148 = length)
 	lea	rsi, .LC0[rip]	# устанавливаем ссылку на "r"
 	lea	rdi, .LC1[rip]	# устанавливаем ссылку на "input.txt"
 	call	fopen@PLT
 	mov	QWORD PTR -104[rbp], rax	# запись input => (-104 = input)
 	mov	eax, DWORD PTR -148[rbp]	# {
-	movsx	rdx, eax										# - обращение к [length] в A[...]
-	sub	rdx, 1										# }
+	movsx	rdx, eax				# - обращение к [length] в A[...]
+	sub	rdx, 1				# }
 	mov	QWORD PTR -112[rbp], rdx	# указаткль на массив A[] с аргументов cmd
 	movsx	rdx, eax
 	mov	QWORD PTR -208[rbp], rdx
@@ -108,8 +107,8 @@ main:
 	sal	rax, 2
 	mov	QWORD PTR -120[rbp], rax	# конец создания массива А[] с аргументов cmd (-120 = A[])
 	mov	eax, DWORD PTR -148[rbp]	# {
-	movsx	rdx, eax										# - обращение к [length] в B[...]
-	sub	rdx, 1										# }
+	movsx	rdx, eax				# - обращение к [length] в B[...]
+	sub	rdx, 1				# }
 	mov	QWORD PTR -128[rbp], rdx	# указаткль на массив B[] с аргументов cmd
 	movsx	rdx, eax
 	mov	QWORD PTR -240[rbp], rdx
@@ -234,12 +233,12 @@ main:
 	mov	eax, 1 # return 1;
 	jmp	.L28
 .L15:
-	mov	eax, DWORD PTR -148[rbp]# {
+	mov	eax, DWORD PTR -148[rbp]	# {
 	mov	rdx, rsp
-	mov	rbx, rdx										# - обращение к [length] в A[...]
+	mov	rbx, rdx				# - обращение к [length] в A[...]
 	movsx	rdx, eax
-	sub	rdx, 1									# }
-	mov	QWORD PTR -72[rbp], rdx	// указаткль на массив A[] 
+	sub	rdx, 1				# }
+	mov	QWORD PTR -72[rbp], rdx	# указаткль на массив A[] 
 	movsx	rdx, eax
 	mov	QWORD PTR -272[rbp], rdx
 	mov	QWORD PTR -264[rbp], 0
@@ -284,9 +283,9 @@ main:
 	shr	rax, 2
 	sal	rax, 2
 	mov	QWORD PTR -80[rbp], rax		# конец создания массива A[] (-80 = A[])
-	mov	eax, DWORD PTR -148[rbp]	#	{
-	movsx	rdx, eax										# - обращение к [length] в B[...]
-	sub	rdx, 1										#	}
+	mov	eax, DWORD PTR -148[rbp]	# {
+	movsx	rdx, eax					# - обращение к [length] в B[...]
+	sub	rdx, 1				# }
 	mov	QWORD PTR -88[rbp], rdx		# указаткль на массив B[]
 	movsx	rdx, eax
 	mov	r14, rdx
@@ -334,16 +333,16 @@ main:
 	mov	QWORD PTR -96[rbp], rax		# конец создания массива B[] 
 	lea	rdi, .LC8[rip]
 	mov	eax, 0
-	call	printf@PLT # printf("Random input or Direct (ans: 1, !=1):");
+	call	printf@PLT 	# printf("Random input or Direct (ans: 1, !=1):");
 	lea	rax, -152[rbp]
 	mov	rsi, rax
 	lea	rdi, .LC2[rip]
 	mov	eax, 0
-	call	__isoc99_scanf@PLT # scanf("%d", &answer);
+	call	__isoc99_scanf@PLT 	# scanf("%d", &answer);
 	mov	eax, DWORD PTR -152[rbp]
 	cmp	eax, 1
 	jne	.L22
-	lea	rax, -176[rbp] # struct timespec sec;
+	lea	rax, -176[rbp] 	# struct timespec sec;
 	mov	rsi, rax
 	mov	edi, 0
 	call	clock_gettime@PLT # clock_gettime(CLOCK_REALTIME, &sec);
