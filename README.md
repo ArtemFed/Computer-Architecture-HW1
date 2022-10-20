@@ -6,12 +6,20 @@ Arrays and integer arithmetic
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
 > * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
+
 ### 2. Немодифицированная ассемблерная программа с комментариями: <br/>
 > * [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/fc4f57662c2e7d2b1448b3c026cd129c3346eb38/Assembler/comments.md)
 > * [main.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s) <br/>
 > * [task.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s) <br/>
 > * [print.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s) <br/>
-### 3. Тесты:
+
+### 3. Модифицированная ассемблерная программа с комментариями: <br/>
+> * [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/575d07832ba26218638b2f5db34342c96f6c4b02/Assembler_mod/variables_mod.s)
+> * [main.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
+> * [task.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
+> * [print.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.) <br/>
+
+### 4. Тесты:
 1. Тест 1 - Random <br/>
  > * Без модификаций: <br/>
  > <img width="250" alt="test_1_not_mod" src="https://user-images.githubusercontent.com/57373162/196995941-6beb2532-883f-414f-95cd-0aa531501a06.png"> <br/>
