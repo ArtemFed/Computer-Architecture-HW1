@@ -22,7 +22,7 @@ Arrays and integer arithmetic
  > <img width="250" alt="test_2_not_mod" src="https://user-images.githubusercontent.com/57373162/196997528-c065d1fd-1711-49e4-9175-a0006bfe2f04.png"> <br/>
  > * С модификациями: <br/>
  > <img width="250" alt="test_2_mod" src="https://user-images.githubusercontent.com/57373162/196997487-f1b85172-13a4-4616-bf36-30bb368edf6c.png"> <br/>
-3. Тест 3 - некорректный ручной ввод length ( > 20 ) <br/>
+3. Тест 3 - некорректный ручной ввод length = 25 ( при length <= 20 по условию ) <br/>
  > * Без модификаций: <br/>
  > <img width="250" alt="test_3_not_mod" src="https://user-images.githubusercontent.com/57373162/196997922-332e0fe7-bf2d-43b5-8fa3-108935dadab6.png"> <br/>
  > * С модификациями: <br/>
