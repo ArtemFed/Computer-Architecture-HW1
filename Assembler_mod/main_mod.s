@@ -51,10 +51,9 @@ main:
 	mov	rbx, rsp
 	mov	rax, QWORD PTR -208[rbp]	# сохраняем значение argv[0]
 	add	rax, 8
-	mov	rax, QWORD PTR [rax]
-	movzx	eax, BYTE PTR [rax]
-	movsx	eax, al
-	sub	eax, 48
+	mov 	rax, QWORD PTR [rax]
+	mov 	rdi, rax
+	call 	atoi@PLT
 	mov	DWORD PTR -184[rbp], eax	# запись input => (-184 = input)
 	lea	rsi, .LC0[rip]
 	lea	rdi, .LC1[rip]
