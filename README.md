@@ -8,9 +8,9 @@ Arrays and integer arithmetic
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
 ### 2. Немодифицированная ассемблерная программа с комментариями: <br/>
 > * [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/fc4f57662c2e7d2b1448b3c026cd129c3346eb38/Assembler/comments.md)
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s) <br/>
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s) <br/>
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s) <br/>
+> * [main.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s) <br/>
+> * [task.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s) <br/>
+> * [print.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s) <br/>
 ### 3. Тесты:
 1. Тест 1 - Random <br/>
  > * Без модификаций: <br/>
