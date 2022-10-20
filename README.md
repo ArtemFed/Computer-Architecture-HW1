@@ -1,34 +1,29 @@
 # Computer-Architecture-HW1
 Arrays and integer arithmetic
 
-## 4 балла:
-1) Приведено решение задачи на C <br>
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br>
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br>
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br>
-2) Немодифицированная ассемблерная программа с комментариями: <br>
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s) <br>
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s) <br>
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s) <br>
- <br>
- 
- [Ассемблерная программа (без модификаций и комментариев)](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/6c2395f2a2be8598a75ea928cbf0e845671ab8ff/HW1.s)  -->  [файл .exe](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/d348ed0f77a0dc4db09101e6fa3d0753d5c7f5e5/%D0%90%D1%81%D1%81%D0%B5%D0%BC%D0%B1%D0%BB%D0%B5%D1%80%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0/HW1_assembler)
- * [Модифицированная Ассемблерная программа](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/8f9fddbf79921448846286b128f1938aa6921135/HW1_mod.s)  -->  [файл .exe](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/82c6f948554662427d0b09c10310744652f0689a/%D0%90%D1%81%D1%81%D0%B5%D0%BC%D0%B1%D0%BB%D0%B5%D1%80%D0%BD%D0%B0%D1%8F-%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B0-%D0%9C%D0%BE%D0%B4/HW1_assembler_mod)
- * [Модифицированная Ассемблерная программа отдельно откомпилирована и скомпонована без использования опций отладки]()
-
-### Тестирование
-1. Test 1: А = [-2, -1, 0, 5, 2] <br/>
-  > * С-программа <br/>
-  > <img width="250" alt="Screenshot_3" src="https://user-images.githubusercontent.com/57373162/194143442-8ed1c026-cae8-4c5f-8126-4d2e1fcbee8c.png"> <br/>
-  > * НЕ_Модифицированная версия <br/>
-  > <img width="250" alt="Screenshot_4" src="https://user-images.githubusercontent.com/57373162/194087152-220b1cf1-7a57-4893-b814-1894cb8e6d1f.png"> <br/>
-  > * Модифицированная версия <br/>
-  > <img width="250" alt="Screenshot_5" src="https://user-images.githubusercontent.com/57373162/194087184-31b1156b-3a99-4ba9-b0ee-0125d10186c6.png"> <br/>
-
-2. Test 2: A = [5, 10, -10, -30, 1, 0]
-  > * С-программа <br/>
-  > <img width="250" alt="Screenshot_6" src="https://user-images.githubusercontent.com/57373162/194143651-7355de9d-b29f-476e-8a19-0eb0282a4069.png"> <br/>
-  > * НЕ_Модифицированная версия <br/>
-  > <img width="250" alt="Screenshot_7" src="https://user-images.githubusercontent.com/57373162/194143882-3d997d5a-7c70-40d1-adb2-bc96f3367089.png"> <br/>
-  > * Модифицированная версия <br/>
-  > <img width="250" alt="Screenshot_8" src="https://user-images.githubusercontent.com/57373162/194143906-bbc3c5ca-66a0-4b59-a726-2ca155ac76a4.png"> <br/>
+# 4 балла:
+### 1. Приведено решение задачи на C: <br/>
+> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
+> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
+> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
+### 2. Немодифицированная ассемблерная программа с комментариями: <br/>
+> * [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/fc4f57662c2e7d2b1448b3c026cd129c3346eb38/Assembler/comments.md)
+> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s) <br/>
+> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s) <br/>
+> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s) <br/>
+### 3. Тесты:
+1. Тест 1 - Random <br/>
+ > * Без модификаций: <br/>
+ > <img width="250" alt="test_1_not_mod" src="https://user-images.githubusercontent.com/57373162/196995941-6beb2532-883f-414f-95cd-0aa531501a06.png"> <br/>
+ > * С модификациями: <br/>
+ > <img width="250" alt="test_1_mod" src="https://user-images.githubusercontent.com/57373162/196996037-41d13d69-49a4-43ed-99f8-bdd7cfc2d261.png"> <br/>
+2. Тест 2 - А = [5, -10, 2, 0] <br/>
+ > * Без модификаций: <br/>
+ > <img width="250" alt="test_2_not_mod" src="https://user-images.githubusercontent.com/57373162/196997528-c065d1fd-1711-49e4-9175-a0006bfe2f04.png"> <br/>
+ > * С модификациями: <br/>
+ > <img width="250" alt="test_2_mod" src="https://user-images.githubusercontent.com/57373162/196997487-f1b85172-13a4-4616-bf36-30bb368edf6c.png"> <br/>
+3. Тест 3 - некорректный length ( > 20 ) <br/>
+ > * Без модификаций: <br/>
+ > <img width="250" alt="test_3_not_mod" src="https://user-images.githubusercontent.com/57373162/196997922-332e0fe7-bf2d-43b5-8fa3-108935dadab6.png"> <br/>
+ > * С модификациями: <br/>
+ > <img width="250" alt="test_3_mod" src="https://user-images.githubusercontent.com/57373162/196997940-3b0140a3-fb75-4dd8-b1b2-f9c626665ba4.png"> <br/>
