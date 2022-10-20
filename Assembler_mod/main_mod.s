@@ -59,7 +59,7 @@ main:
 	lea	rdi, .LC1[rip]
 	call	fopen@PLT
 	mov	QWORD PTR -128[rbp], rax 	# -128 = поток "input.txt"
-	mov r11, QWORD PTR -128[rbp] 	# r11 - copy stream "input.txt"
+	mov 	r11, QWORD PTR -128[rbp] 	# r11 - copy stream "input.txt"
 	mov	eax, DWORD PTR -184[rbp]
 	movsx	rdx, eax
 	sub	rdx, 1
@@ -156,7 +156,7 @@ main:
 	mov	QWORD PTR -96[rbp], rax 	# конец создания массива B[] с аргументов cmd (-96 = B[])
 	mov r12d, 0
 	jmp	.L9
-.L10:	# for для fscanf()
+.L10:						# for для fscanf()
 	mov	eax, r12d
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -112[rbp]
@@ -181,10 +181,10 @@ main:
 	lea	rdi, .LC4[rip]
 	call	fopen@PLT
 	mov	QWORD PTR -88[rbp], rax 	# -88 = поток "output.txt"
-	mov r14, QWORD PTR -88[rbp] 	# r14 - copy stream "output.txt"
+	mov 	r14, QWORD PTR -88[rbp] 	# r14 - copy stream "output.txt"
 	mov	r12d, 0	
 	jmp	.L11
-.L12:	# for для fprintf()
+.L12:						# for для fprintf()
 	mov	rax, QWORD PTR -96[rbp]
 	mov	edx, r12d
 	movsx	rdx, edx
@@ -278,7 +278,7 @@ main:
 	sal	rax, 2
 	mov	QWORD PTR -152[rbp], rax	# конец создания массива A[] (-80 = A[])
 	mov	eax, DWORD PTR -184[rbp]
-	movsx	rdx, eax				# Создание массива B[]
+	movsx	rdx, eax			# Создание массива B[]
 	lea	rdx, 0[0+rax*4]
 	mov	eax, 16
 	sub	rax, 1
@@ -327,11 +327,11 @@ main:
 	mov	eax, DWORD PTR -180[rbp]
 	cmp	eax, 1
 	jne	.L22
-	lea	rax, -80[rbp] # struct timespec sec;
+	lea	rax, -80[rbp] 			# struct timespec sec;
 	mov	rsi, rax
 	mov	edi, 0
 	call	clock_gettime@PLT
-	mov	rax, QWORD PTR -72[rbp]	# srand(sec.tv_nsec);
+	mov	rax, QWORD PTR -72[rbp]		# srand(sec.tv_nsec);
 	mov	edi, eax
 	call	srand@PLT
 	lea	rdi, .LC9[rip]
