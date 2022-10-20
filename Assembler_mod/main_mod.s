@@ -153,11 +153,9 @@ main:
 	shr	rax, 2
 	sal	rax, 2
 	mov	QWORD PTR -96[rbp], rax 	# конец создания массива B[] с аргументов cmd (-96 = B[])
-	# mov	DWORD PTR -164[rbp], 0	# итератор i в for для fscanf()
 	mov r12d, 0
 	jmp	.L9
 .L10:	# for для fscanf()
-	# mov	eax, DWORD PTR -164[rbp]		
 	mov	eax, r12d
 	lea	rdx, 0[0+rax*4]
 	mov	rax, QWORD PTR -112[rbp]
@@ -167,11 +165,9 @@ main:
 	mov	rdi, rax
 	mov	eax, 0
 	call	__isoc99_fscanf@PLT
-	# add	DWORD PTR -164[rbp], 1
 	add	r12d, 1
 .L9:
 	mov	eax, DWORD PTR -184[rbp]
-	# cmp	DWORD PTR -164[rbp], eax
 	cmp	r12d, eax
 	jl	.L10
 	mov	rdi, QWORD PTR -128[rbp]
@@ -184,12 +180,10 @@ main:
 	lea	rdi, .LC4[rip]
 	call	fopen@PLT
 	mov	QWORD PTR -88[rbp], rax # -88 = поток "output.txt"
-	# mov	DWORD PTR -168[rbp], 0	# -168 - i в for с fprintf
 	mov	r12d, 0	
 	jmp	.L11
 .L12:	# for для fprintf()
 	mov	rax, QWORD PTR -96[rbp]
-	# mov	edx, DWORD PTR -168[rbp]
 	mov	edx, r12d
 	movsx	rdx, edx
 	mov	edx, DWORD PTR [rax+rdx*4]
@@ -198,11 +192,9 @@ main:
 	mov	rdi, rax
 	mov	eax, 0
 	call	fprintf@PLT
-	# add	DWORD PTR -168[rbp], 1
 	add	r12d, 1
 .L11:
 	mov	eax, DWORD PTR -184[rbp]
-	# cmp	DWORD PTR -168[rbp], eax
 	cmp	r12d, eax
 	jl	.L12
 	mov	rdi, QWORD PTR -88[rbp]
@@ -246,7 +238,6 @@ main:
 	movsx	rdx, eax
 	mov	QWORD PTR -304[rbp], rdx
 	mov	QWORD PTR -296[rbp], 0
-	# cdqe
 	lea	rdx, 0[0+rax*4]
 	mov	eax, 16
 	sub	rax, 1
@@ -285,15 +276,7 @@ main:
 	sal	rax, 2
 	mov	QWORD PTR -152[rbp], rax	# конец создания массива A[] (-80 = A[])
 	mov	eax, DWORD PTR -184[rbp]
-	movsx	rdx, eax
-	sub	rdx, 1
-	mov	QWORD PTR -144[rbp], rdx	# указатель на массив B[]
-	movsx	rdx, eax
-	mov	r14, rdx
-	mov	r15d, 0
-	movsx	rdx, eax
-	mov	r12, rdx
-	mov	r13d, 0
+	movsx	rdx, eax				# Создание массива B[]
 	lea	rdx, 0[0+rax*4]
 	mov	eax, 16
 	sub	rax, 1
@@ -330,7 +313,7 @@ main:
 	add	rax, 3
 	shr	rax, 2
 	sal	rax, 2
-	mov	QWORD PTR -136[rbp], rax
+	mov	QWORD PTR -136[rbp], rax	# -136 = указаткль на массив B[]
 	lea	rdi, .LC8[rip]
 	mov	eax, 0
 	call	printf@PLT
