@@ -11,7 +11,7 @@ int main(int argc, char *argv[]) {
     int length, answertask = 0;
 
     if (argc == 2) {
-        length = *argv[1] - '0';
+        length = atoi(argv[1]);
         FILE *input = fopen("input.txt", "r");
 
         int A[length];
