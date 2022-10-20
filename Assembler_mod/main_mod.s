@@ -40,13 +40,13 @@ main:
 	push	r12
 	push	rbx
 	sub	rsp, 264
-	mov	DWORD PTR -196[rbp], edi # -196 = argc
-	mov	QWORD PTR -208[rbp], rsi # -208 = argv
+	mov	DWORD PTR -196[rbp], edi 	# -196 = argc
+	mov	QWORD PTR -208[rbp], rsi 	# -208 = argv
 	mov	rax, QWORD PTR fs:40
 	mov	QWORD PTR -56[rbp], rax
 	xor	eax, eax
-	mov	DWORD PTR -180[rbp], 0	# запись answer => (-180 = answer)
-	cmp	DWORD PTR -196[rbp], 2	# сравниваем argc c 2
+	mov	DWORD PTR -180[rbp], 0		# запись answer => (-180 = answer)
+	cmp	DWORD PTR -196[rbp], 2		# сравниваем argc c 2
 	jne	.L2
 	mov	rbx, rsp
 	mov	rax, QWORD PTR -208[rbp]	# сохраняем значение argv[0]
@@ -58,7 +58,8 @@ main:
 	lea	rsi, .LC0[rip]
 	lea	rdi, .LC1[rip]
 	call	fopen@PLT
-	mov	QWORD PTR -128[rbp], rax # -128 = поток "input.txt"
+	mov	QWORD PTR -128[rbp], rax 	# -128 = поток "input.txt"
+	mov r11, QWORD PTR -128[rbp] 	# r11 - copy stream "input.txt"
 	mov	eax, DWORD PTR -184[rbp]
 	movsx	rdx, eax
 	sub	rdx, 1
@@ -179,7 +180,8 @@ main:
 	lea	rsi, .LC3[rip]
 	lea	rdi, .LC4[rip]
 	call	fopen@PLT
-	mov	QWORD PTR -88[rbp], rax # -88 = поток "output.txt"
+	mov	QWORD PTR -88[rbp], rax 	# -88 = поток "output.txt"
+	mov r14, QWORD PTR -88[rbp] 	# r14 - copy stream "output.txt"
 	mov	r12d, 0	
 	jmp	.L11
 .L12:	# for для fprintf()
