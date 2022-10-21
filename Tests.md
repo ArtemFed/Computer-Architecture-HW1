@@ -20,7 +20,16 @@
 ----
 
 # 6 балла
-
+1. Тест 1 - А = [20, -30, 0, 1] <br/>
+ > * Без модификаций: <br/>
+ > <img width="400" alt="test6_1_s" src="https://user-images.githubusercontent.com/57373162/197086170-4a7bb66e-7a7f-4117-b075-74fcbc914e11.png"><br/>
+ > * С модификациями: <br/>
+ > <img width="400" alt="test6_1_mod" src="https://user-images.githubusercontent.com/57373162/197086217-3c3840fa-b91c-4369-be13-5313f691c4ea.png"> <br/>
+2. Тест 2 - А = [-1, -2, -3, 10, 0, -5] <br/>
+ > * Без модификаций: <br/>
+ > <img width="400" alt="test6_2_s" src="https://user-images.githubusercontent.com/57373162/197086362-98ef48bc-9715-4023-b5a1-1b96449298b3.png"> <br/>
+ > * С модификациями: <br/>
+ > <img width="400" alt="test6_2_mod" src="https://user-images.githubusercontent.com/57373162/197086332-2207b184-c7fb-4b79-bccd-1087148ce99d.png"> <br/>
 
 ----
 
