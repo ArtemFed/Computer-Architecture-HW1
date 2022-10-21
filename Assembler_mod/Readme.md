@@ -1,4 +1,4 @@
-# Для модификации было изменено вручную после применения "gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none name.s -o name.o":
+# Для модификации было применена команда "gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none name.s -o name.o", после чего все файлы были отредактированны вручную:
 # main_mod.s
 ###    Бесполезные переприсваивания:
 *     mov rax, rsp   &   mov rbx, rax => mov	rbx, rsp <br> 
