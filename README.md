@@ -113,11 +113,11 @@ Arrays and integer arithmetic <br/>
 > * [Ссылка](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/85764be93cbb70bdb0302ecd95a2dd665eb67fdc/Tests.md)
 
 ### Отчёт:
-> * Си <br/>
->   [main_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/main_timer.c) <br/>
->   [task_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/task_timer.c) <br/>
->   [print_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/print_timer.c) <br/>
-> * Ассемблер <br/>
->   [main_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/main_timer_mod.s) <br/>
->   [task_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/task_timer_mod.s) <br/>
->   [print_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/print_timer_mod.s) <br/>
+> 1) Си <br/>
+> *  [main_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/main_timer.c)
+> *  [task_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/task_timer.c)
+> *  [print_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/print_timer.c)
+> 2) Ассемблер <br/>
+> *  [main_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/main_timer_mod.s)
+> *  [task_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/task_timer_mod.s)
+> *  [print_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/print_timer_mod.s)
