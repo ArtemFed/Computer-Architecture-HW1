@@ -54,7 +54,7 @@ main:
 	mov 	rax, QWORD PTR [rax]
 	mov 	rdi, rax
 	call 	atoi@PLT
-	mov	DWORD PTR -184[rbp], eax	 запись eax в -184 = input
+	mov	DWORD PTR -184[rbp], eax	# -184 = input копирует eax
 	lea	rsi, .LC0[rip]
 	lea	rdi, .LC1[rip]
 	call	fopen@PLT
@@ -138,7 +138,7 @@ main:
 	shr	rax, 2
 	sal	rax, 2
 	mov	QWORD PTR -96[rbp], rax 	# конец создания массива B[] для аргументов cmd (-96 = B[])
-	mov r12d, 0		                # итерируемая переменная i в for для fscanf()
+	mov r12d, 0		                # r12d - итерируемая переменная i в for для fscanf()
 	jmp	.L9
 .L10:	# for для fscanf()
 	mov	eax, r12d                   # eax копирует значение итератора i
@@ -193,7 +193,7 @@ main:
 	lea	rdi, .LC6[rip]
 	mov	eax, 0
 	call	printf@PLT
-	lea	rax, -184[rbp]          # rax передаётся по ссылке 
+	lea	rax, -184[rbp]          # в rax передаётся по ссылке length
 	mov	rsi, rax
 	lea	rdi, .LC2[rip]
 	mov	eax, 0
