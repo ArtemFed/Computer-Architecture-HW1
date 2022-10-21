@@ -1,7 +1,9 @@
-# Для модификации было применена команда "gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none name.s -o name.o", после чего все файлы были отредактированны вручную:
+# Для модификации была применена команда 
+>     gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none name.s -o name.o
+После чего все файлы были отредактированны вручную:
 # main_mod.s
 ###    Бесполезные переприсваивания:
-*     mov rax, rsp   &   mov rbx, rax => mov	rbx, rsp <br> 
+*     mov rax, rsp   &   mov rbx, rax => mov	rbx, rsp
 *     mov rax, QWORD PTR -128[rbp]  &  mov rdi, rax => mov rdi, QWORD PTR -128[rbp]
 *     mov ecx, DWORD PTR -184[rbp]  &  mov esi, ecx => mov esi, DWORD PTR -184[rbp] 
 *     mov rax, QWORD PTR -112[rbp]  &  mov rdi, rax => mov rdi, QWORD PTR -112[rbp]
