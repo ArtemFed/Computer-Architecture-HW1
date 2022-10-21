@@ -2,6 +2,7 @@
 Arrays and integer arithmetic <br/>
 
 ----
+
 # 4 балла:
 ### 1. Приведено решение задачи на Cи: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
@@ -26,7 +27,9 @@ Arrays and integer arithmetic <br/>
 ### Отчёт:
 > * По результатам трёх тестов сравнения программ на ассемблере и модифицированном ассемблере можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что модификация программы проведена успешно. <br/>
 > * [Ссылка на отчёт о модификациях](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/55f2b857d00237ee41008801a3ed50b3f8488e47/Assembler_mod/Readme.md)
+
 ---- 
+
 # 5 баллов:
 ### 1. Решение на Cи с передачей данных в функции через параметры + локальные переменные: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
@@ -41,9 +44,15 @@ Arrays and integer arithmetic <br/>
 
 ### Отчёт:
 > * Вызовы уже существующих функций task(A[], length, B[]) и print_arr(B[], length) были прокомментированны, переходы к регистрам rdx, esi, rdi были отмечены.
-> * Была прокоментированна связь между параметрами языка Си и регистрами по правилам.
->   1) 
+> * Была прокоментированна связь между параметрами языка Си и регистрами по правилам:
+>   1) eax/rax - для запоминания/аккумулирования данных
+>   2) rdi - первый аргумент в функции / edi - argc
+>   3) rsi/esi - второй аргумент в функции (esi - так как передаю "маленький" length, а не массив)
+>   4) rdx - третий аргумент в функции
+>   5) rcx - счётчик
+
 ---- 
+
 # 6 баллов:
 ### 1. Решение на ассемблере с рефакторингом программы за счет максимального использования регистров процессор: <br/>
 > * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
@@ -60,6 +69,7 @@ Arrays and integer arithmetic <br/>
     ! замена length не удалась, привела к Segmentation fault
 
 ---- 
+
 # 7 баллов:
 ### 1. Решение на Cи с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt): <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
@@ -76,6 +86,7 @@ Arrays and integer arithmetic <br/>
 > * [output.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/output.txt)
 
 ---- 
+
 # 8 баллов:
 ### 1. Решение на Cи c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
