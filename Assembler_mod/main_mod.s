@@ -43,8 +43,8 @@ main:
 	mov	DWORD PTR -196[rbp], edi 	# -196 = argc копирует edi
 	mov	QWORD PTR -208[rbp], rsi 	# -208 = argv копирует rsi
 	xor	eax, eax
-	mov	DWORD PTR -180[rbp], 0	    # -180 = answer сохраняет 0
-	cmp	DWORD PTR -196[rbp], 2	    # сравниваем -196 = argc c 2
+	mov	DWORD PTR -180[rbp], 0	    	# -180 = answer сохраняет 0
+	cmp	DWORD PTR -196[rbp], 2	    	# сравниваем -196 = argc c 2
 	jne	.L2
 	mov	rbx, rsp
 	mov	rax, QWORD PTR -208[rbp]	# rax копирует -208 = argv[0]
@@ -56,10 +56,10 @@ main:
 	lea	rsi, .LC0[rip]
 	lea	rdi, .LC1[rip]
 	call	fopen@PLT
-	mov	QWORD PTR -128[rbp], rax    # -128 = поток "input.txt" копирует rax
-	mov	r11, QWORD PTR -128[rbp]    # r11 копирует поток "input.txt"
+	mov	QWORD PTR -128[rbp], rax    	# -128 = поток "input.txt" копирует rax
+	mov	r11, QWORD PTR -128[rbp]    	# r11 копирует поток "input.txt"
 	mov	eax, DWORD PTR -184[rbp]    
-	movsx	rdx, eax	# массив A[] для аргументов cmd
+	movsx	rdx, eax			# массив A[] для аргументов cmd
 	lea	rdx, 0[0+rax*4]
 	mov	eax, 16
 	sub	rax, 1
@@ -97,8 +97,8 @@ main:
 	shr	rax, 2
 	sal	rax, 2
 	mov	QWORD PTR -112[rbp], rax 	# -112 = A[] для аргументов cmd копирует rax
-	mov	eax, DWORD PTR -184[rbp]    # eax копирует length B[]
-	movsx	rdx, eax		# Начало создания массива B[] для аргументов cmd
+	mov	eax, DWORD PTR -184[rbp]    	# eax копирует length B[]
+	movsx	rdx, eax			# Начало создания массива B[] для аргументов cmd
 	lea	rdx, 0[0+rax*4]
 	mov	eax, 16
 	sub	rax, 1
@@ -135,53 +135,53 @@ main:
 	add	rax, 3
 	shr	rax, 2
 	sal	rax, 2
-	mov	QWORD PTR -96[rbp], rax 	# конец создания массива B[] для аргументов cmd (-96 = B[])
-	mov r12d, 0		                # r12d - итерируемая переменная i в for для fscanf()
+	mov	QWORD PTR -96[rbp], rax     	# конец создания массива B[] для аргументов cmd (-96 = B[])
+	mov r12d, 0		            	# r12d - итерируемая переменная i в for для fscanf()
 	jmp	.L9
 .L10:	# for для fscanf()
-	mov	eax, r12d                   # eax копирует значение итератора i
+	mov	eax, r12d                   	# eax копирует значение итератора i
 	lea	rdx, 0[0+rax*4]
-	mov	rax, QWORD PTR -112[rbp]    # rax копирует -112 = первый элемент A[] для обращения по индексу
+	mov	rax, QWORD PTR -112[rbp]    	# rax копирует -112 = первый элемент A[] для обращения по индексу
 	add	rdx, rax
-	mov	rax, QWORD PTR -128[rbp]    # rax копирует поток -128 = "input.txt" 
+	mov	rax, QWORD PTR -128[rbp]    	# rax копирует поток -128 = "input.txt" 
 	lea	rsi, .LC2[rip]
 	mov	rdi, rax
 	mov	eax, 0
 	call	__isoc99_fscanf@PLT
-	add	r12d, 1                     # увеличиваем значение итератора на 1
+	add	r12d, 1                     	# увеличиваем значение итератора на 1
 .L9:
-	mov	eax, DWORD PTR -184[rbp]    # eax копирует -184 = length для сравнения
-	cmp	r12d, eax                   # сравниваем итератор с eax
+	mov	eax, DWORD PTR -184[rbp]    	# eax копирует -184 = length для сравнения
+	cmp	r12d, eax                   	# сравниваем итератор с eax
 	jl	.L10
 	mov	rdi, QWORD PTR -128[rbp]
 	call	fclose@PLT
-	mov	rdx, QWORD PTR -96[rbp]     # rdx копирует массив B[] для аргументов cmd
-	mov	esi, DWORD PTR -184[rbp]    # esi копирует length
-	mov	rdi, QWORD PTR -112[rbp]    # rdi копирует массива A[] для аргументов cmd
-	call	task@PLT                # task(A, length, B);
+	mov	rdx, QWORD PTR -96[rbp]     	# rdx копирует массив B[] для аргументов cmd
+	mov	esi, DWORD PTR -184[rbp]    	# esi копирует length
+	mov	rdi, QWORD PTR -112[rbp]    	# rdi копирует массива A[] для аргументов cmd
+	call	task@PLT                    	# task(A, length, B);
 	lea	rsi, .LC3[rip]
 	lea	rdi, .LC4[rip]
 	call	fopen@PLT
-	mov	QWORD PTR -88[rbp], rax     # -88 = поток "output.txt" копирует rax
+	mov	QWORD PTR -88[rbp], rax     	# -88 = поток "output.txt" копирует rax
 	mov 	r14, QWORD PTR -88[rbp] 	# r14 копирует поток "output.txt"
-	mov	r12d, 0	                    # задаём итерируемую переменную i в for с fprintf
+	mov	r12d, 0	                    	# задаём итерируемую переменную i в for с fprintf
 	jmp	.L11
-.L12:	                        # for для fprintf()
-	mov	rax, QWORD PTR -96[rbp]     # rax копирует -96 = A[]
-	mov	edx, r12d                   # edx копирует значение итератора
+.L12:	                        	    	# for для fprintf()
+	mov	rax, QWORD PTR -96[rbp]     	# rax копирует -96 = A[]
+	mov	edx, r12d                   	# edx копирует значение итератора
 	movsx	rdx, edx
 	mov	edx, DWORD PTR [rax+rdx*4]
-	mov	rax, QWORD PTR -88[rbp]     # rax копирует поток "output.txt"
+	mov	rax, QWORD PTR -88[rbp]     	# rax копирует поток "output.txt"
 	lea	rsi, .LC5[rip]
 	mov	rdi, rax
 	mov	eax, 0
 	call	fprintf@PLT
-	add	r12d, 1                     # увеличиваем значение итератора на 1
+	add	r12d, 1                     	# увеличиваем значение итератора на 1
 .L11:
-	mov	eax, DWORD PTR -184[rbp]    # eax копирует length = -184 
-	cmp	r12d, eax                   # сравниваем значение итератора с eax
+	mov	eax, DWORD PTR -184[rbp]    	# eax копирует length = -184 
+	cmp	r12d, eax                   	# сравниваем значение итератора с eax
 	jl	.L12
-	mov	rdi, QWORD PTR -88[rbp]     # rdi копирует поток "output.txt"
+	mov	rdi, QWORD PTR -88[rbp]     	# rdi копирует поток "output.txt"
 	call	fclose@PLT
 	mov	eax, 0
 	mov	rsp, rbx
@@ -191,7 +191,7 @@ main:
 	lea	rdi, .LC6[rip]
 	mov	eax, 0
 	call	printf@PLT
-	lea	rax, -184[rbp]          # в rax передаётся по ссылке length
+	lea	rax, -184[rbp]              	# в rax передаётся по ссылке length
 	mov	rsi, rax
 	lea	rdi, .LC2[rip]
 	mov	eax, 0
@@ -252,9 +252,9 @@ main:
 	add	rax, 3
 	shr	rax, 2
 	sal	rax, 2
-	mov	QWORD PTR -152[rbp], rax	# конец создания массива A[] (-152 = A[])
-	mov	eax, DWORD PTR -184[rbp]    # eax копирует length
-	movsx	rdx, eax	# создание массива B[]
+	mov	QWORD PTR -152[rbp], rax    	# конец создания массива A[] (-152 = A[])
+	mov	eax, DWORD PTR -184[rbp]    	# eax копирует length
+	movsx	rdx, eax		    	# создание массива B[]
 	lea	rdx, 0[0+rax*4]
 	mov	eax, 16
 	sub	rax, 1
@@ -303,11 +303,11 @@ main:
 	mov	eax, DWORD PTR -180[rbp]
 	cmp	eax, 1
 	jne	.L22
-	lea	rax, -80[rbp] # struct timespec sec;
+	lea	rax, -80[rbp] 		    	# struct timespec sec;
 	mov	rsi, rax
 	mov	edi, 0
 	call	clock_gettime@PLT
-	mov	rax, QWORD PTR -72[rbp]	# srand(sec.tv_nsec);
+	mov	rax, QWORD PTR -72[rbp]	   	# srand(sec.tv_nsec);
 	mov	edi, eax
 	call	srand@PLT
 	lea	rdi, .LC9[rip]
@@ -347,15 +347,15 @@ main:
 	call	printf@PLT
 	add	DWORD PTR -172[rbp], 1
 .L23:
-	mov	eax, DWORD PTR -184[rbp]    # eax копирует length
+	mov	eax, DWORD PTR -184[rbp]    	# eax копирует length
 	cmp	DWORD PTR -172[rbp], eax    
 	jl	.L24
-	mov	rdx, QWORD PTR -136[rbp]    # rdx копирует B[]
-	mov	esi, DWORD PTR -184[rbp]    # esi копирует length
-	mov	rdi, QWORD PTR -152[rbp]    # rdi копирует A[]
-	call	task@PLT                # task(A[], length, B[])
-	mov	esi, DWORD PTR -184[rbp]    # esi копирует length
-	mov	rdi, QWORD PTR -136[rbp]    # rdi копирует B[]
+	mov	rdx, QWORD PTR -136[rbp]    	# rdx копирует B[]
+	mov	esi, DWORD PTR -184[rbp]    	# esi копирует length
+	mov	rdi, QWORD PTR -152[rbp]    	# rdi копирует A[]
+	call	task@PLT                    	# task(A[], length, B[])
+	mov	esi, DWORD PTR -184[rbp]    	# esi копирует length
+	mov	rdi, QWORD PTR -136[rbp]    	# rdi копирует B[]
 	call	print_arr@PLT
 	mov	eax, 0
 	jmp	.L25
@@ -382,12 +382,12 @@ main:
 	mov	eax, DWORD PTR -184[rbp]
 	cmp	DWORD PTR -176[rbp], eax
 	jl	.L27
-	mov	rdx, QWORD PTR -136[rbp]    # rdx копирует B[]
-	mov	esi, DWORD PTR -184[rbp]    # esi копирует length
-	mov	rdi, QWORD PTR -152[rbp]    # rdi копирует A[]
-	call	task@PLT                # task(A[], length, B[])
-	mov	esi, DWORD PTR -184[rbp]    # esi копирует length
-	mov	rdi, QWORD PTR -136[rbp]    # rdi копирует B[]
+	mov	rdx, QWORD PTR -136[rbp]    	# rdx копирует B[]
+	mov	esi, DWORD PTR -184[rbp]    	# esi копирует length
+	mov	rdi, QWORD PTR -152[rbp]    	# rdi копирует A[]
+	call	task@PLT		    	# task(A[], length, B[])
+	mov	esi, DWORD PTR -184[rbp]    	# esi копирует length
+	mov	rdi, QWORD PTR -136[rbp]    	# rdi копирует B[]
 	call	print_arr@PLT
 	mov	eax, 0
 .L25:
