@@ -8,7 +8,7 @@ extern void task(int *A, int length, int *B);
 extern void print_arr(int *B, int length);
 
 int main(int argc, char *argv[]) {
-    int length, answertask = 0;
+    int length, answer = 0;
 
     if (argc == 2) {
         length = atoi(argv[1]);
