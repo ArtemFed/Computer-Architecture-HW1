@@ -50,6 +50,7 @@ Arrays and integer arithmetic <br/>
     3)  rsi/esi - второй аргумент в функции (esi - так как передаю "маленький" length, а не массив) <br/>
     4)  rdx - третий аргумент в функции <br/>
     5)  rcx - счётчик <br/>
+> * [Ссылка на отчёт о модификациях](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/55f2b857d00237ee41008801a3ed50b3f8488e47/Assembler_mod/Readme.md)
 
 ---- 
 
