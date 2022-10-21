@@ -42,8 +42,6 @@ main:
 	sub	rsp, 264
 	mov	DWORD PTR -196[rbp], edi 	# -196 = argc копирует edi
 	mov	QWORD PTR -208[rbp], rsi 	# -208 = argv копирует rsi
-	mov	rax, QWORD PTR fs:40
-	mov	QWORD PTR -56[rbp], rax     # -56 копирует rax
 	xor	eax, eax
 	mov	DWORD PTR -180[rbp], 0	    # -180 = answer сохраняет 0
 	cmp	DWORD PTR -196[rbp], 2	    # сравниваем -196 = argc c 2
