@@ -22,9 +22,13 @@ Arrays and integer arithmetic <br/>
 
 ### 4. Тестирование:
 > * [Ссылка](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/85764be93cbb70bdb0302ecd95a2dd665eb67fdc/Tests.md)
+
+### Отчёт:
+По результатам трёх тестов сравнения программ на ассемблере и модифицированном ассемблере можно легко заметить, что программы отработали идетично, поэтому делаем вывод, что модификация проведена успешно. <br/>
+[Ссылка на отчёт о модификациях](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/55f2b857d00237ee41008801a3ed50b3f8488e47/Assembler_mod/Readme.md)
 ---- 
 # 5 баллов:
-### 1. Решение на C с передачей данных через параметры + локальные переменные: <br/>
+### 1. Решение на C с передачей данных в функции через параметры + локальные переменные: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
 > * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
