@@ -44,12 +44,12 @@ Arrays and integer arithmetic <br/>
 
 ### Отчёт:
 > * Вызовы уже существующих функций task(A[], length, B[]) и print_arr(B[], length) были прокомментированны, переходы к регистрам rdx, esi, rdi были отмечены.
-> * Была прокоментированна связь между параметрами языка Си и регистрами по правилам:
->   1) eax/rax - для запоминания/аккумулирования данных
->   2) rdi - первый аргумент в функции / edi - argc
->   3) rsi/esi - второй аргумент в функции (esi - так как передаю "маленький" length, а не массив)
->   4) rdx - третий аргумент в функции
->   5) rcx - счётчик
+> * Была прокоментированна связь между параметрами языка Си и регистрами по правилам: <br/>
+    1)  eax/rax - для запоминания/аккумулирования данных  <br/>
+    2)  rdi - первый аргумент в функции / edi - argc <br/>
+    3)  rsi/esi - второй аргумент в функции (esi - так как передаю "маленький" length, а не массив) <br/>
+    4)  rdx - третий аргумент в функции <br/>
+    5)  rcx - счётчик <br/>
 
 ---- 
 
@@ -85,6 +85,11 @@ Arrays and integer arithmetic <br/>
 > * [input.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/input.txt)
 > * [output.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/output.txt)
 
+### Отчёт:
+> * Три единиицы компиляции: main.s, task.s, print.s
+> * Использование аргументов командной строки: 
+>   при вызове файла запуска с одним аргументов, он будет считаться длиной массива, который нужно прочитать из файла input.txt и вывести результат в output.txt, находящиеся в одной папке с файлом запуска (например: "./result.exe 5" => 5 = length и из input.txt будет прочитано 5 цифр в формате %d)
+
 ---- 
 
 # 8 баллов:
@@ -97,3 +102,6 @@ Arrays and integer arithmetic <br/>
 > * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
 > * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
 > * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
+
+### Отчёт:
+> * 
