@@ -60,14 +60,14 @@
 ###     С массивами:
 *     В каждом объявлении массива аккуратно удалены лишние переменные
 *     Например одно из таких бесполезных созданий (массив А[]):
-      - sub	rdx, 1
-	- mov	QWORD PTR -128[rbp], rdx
-	- movsx rdx, eax
-	- mov	QWORD PTR -240[rbp], rdx
-	- mov QWORD PTR -232[rbp], 0
-	- movsx	rdx, eax
-	- mov QWORD PTR -256[rbp], rdx
-	- mov QWORD PTR -248[rbp], 0
+      - sub rdx, 1
+      - mov QWORD PTR -128[rbp], rdx
+      - movsx rdx, eax
+      - mov QWORD PTR -240[rbp], rdx
+      - mov QWORD PTR -232[rbp], 0
+      - movsx rdx, eax
+      - mov QWORD PTR -256[rbp], rdx
+      - mov QWORD PTR -248[rbp], 0
 *     Удалены лишние команды перед созданием массива:
 *     - movsx rdx, eax
 *     - sub rdx, 1	
@@ -82,7 +82,7 @@
       - mov eax, DWORD PTR [rax] <br>
       - mov esi, eax <br>
       - mov eax, 0
-      + mov	esi, DWORD PTR [rax]
+      + mov esi, DWORD PTR [rax]
 
 ###     C регистрами
 *     Были добавлены r12d вместо перемеенных итераторов i
