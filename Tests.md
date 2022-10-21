@@ -16,3 +16,17 @@
  > <img width="400" alt="test_3_not_mod" src="https://user-images.githubusercontent.com/57373162/196997922-332e0fe7-bf2d-43b5-8fa3-108935dadab6.png"> <br/>
  > * С модификациями: <br/>
  > <img width="400" alt="test_3_mod" src="https://user-images.githubusercontent.com/57373162/196997940-3b0140a3-fb75-4dd8-b1b2-f9c626665ba4.png"> <br/>
+
+----
+
+# 6 балла
+
+
+----
+
+# 7 балла
+
+
+----
+
+# 8 балла
