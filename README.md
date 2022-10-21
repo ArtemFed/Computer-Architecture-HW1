@@ -82,7 +82,7 @@ Arrays and integer arithmetic <br/>
 > * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
 > * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
 
-### 3. Тестовые файлы:
+### 3. Текстовые файлы:
 > * [input.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/input.txt)
 > * [output.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/output.txt)
 
@@ -104,5 +104,20 @@ Arrays and integer arithmetic <br/>
 > * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
 > * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
 
+### 3. Решение на Си и на модифицированном ассемблере c внутренним циклом на 10млн проходов для автоматического замера времени: <br/>
+> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
+> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
+> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
+
+### 3. Тестирование:
+> * [Ссылка](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/85764be93cbb70bdb0302ecd95a2dd665eb67fdc/Tests.md)
+
 ### Отчёт:
-> * 
+> * Си
+>   [main_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/main_timer.c)
+>   [task_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/task_timer.c)
+>   [print_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/a4284b2c0403014bc348586de4a4cc1220adbc69/C%20Files_timer/print_timer.c)
+> * Ассемблер
+> * [main_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/main_timer_mod.s)
+> * [task_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/task_timer_mod.s)
+> * [print_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/bc4390dae62c42cecbaa919392cf45773e6fd85e/Assembler_timer/print_timer_mod.s)
