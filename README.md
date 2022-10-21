@@ -60,3 +60,15 @@ Arrays and integer arithmetic <br/>
 ### 3. Тестовые файлы:
 > * [input.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/input.txt)
 > * [output.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/ecb520bb4c843236661b8e5bbb28120a8ceb83bb/Assembler_mod/output.txt)
+
+---- 
+# 8 баллов:
+### 1. Решение на C c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
+> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
+> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
+> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
+
+### 2. Решение на ассемблере c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
+> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
+> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
+> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
