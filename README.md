@@ -3,7 +3,7 @@ Arrays and integer arithmetic <br/>
 
 ----
 # 4 балла:
-### 1. Приведено решение задачи на C: <br/>
+### 1. Приведено решение задачи на Cи: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
 > * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
@@ -28,7 +28,7 @@ Arrays and integer arithmetic <br/>
 > * [Ссылка на отчёт о модификациях](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/55f2b857d00237ee41008801a3ed50b3f8488e47/Assembler_mod/Readme.md)
 ---- 
 # 5 баллов:
-### 1. Решение на C с передачей данных в функции через параметры + локальные переменные: <br/>
+### 1. Решение на Cи с передачей данных в функции через параметры + локальные переменные: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
 > * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
@@ -40,7 +40,8 @@ Arrays and integer arithmetic <br/>
 > * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
 
 ### Отчёт:
-> * Вызовы уже существующих функций task(A[], length, B[]) и print_arr(B[], length) были прокомментированны, переходы к регистрам rdx, esi, rdi были отмечены. <br/>
+> * Вызовы уже существующих функций task(A[], length, B[]) и print_arr(B[], length) были прокомментированны, переходы к регистрам rdx, esi, rdi были отмечены.
+> * Была прокоментированна связь между параметрами языка Си и регистрами.
 ---- 
 # 6 баллов:
 ### 1. Решение на ассемблере с рефакторингом программы за счет максимального использования регистров процессор: <br/>
@@ -53,7 +54,7 @@ Arrays and integer arithmetic <br/>
 
 ---- 
 # 7 баллов:
-### 1. Решение на C с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt): <br/>
+### 1. Решение на Cи с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt): <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
 > * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
@@ -69,7 +70,7 @@ Arrays and integer arithmetic <br/>
 
 ---- 
 # 8 баллов:
-### 1. Решение на C c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
+### 1. Решение на Cи c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
 > * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
 > * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
 > * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
