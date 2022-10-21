@@ -185,7 +185,7 @@ main:
 	call	fclose@PLT
 	mov	eax, 0
 	mov	rsp, rbx
-	jmp	.L28
+	jmp	.L29
 .L2:
 	mov	esi, 20
 	lea	rdi, .LC6[rip]
@@ -208,7 +208,7 @@ main:
 	mov	eax, 0
 	call	printf@PLT
 	mov	eax, 1
-	jmp	.L28
+	jmp	.L29
 .L15:
 	mov	eax, DWORD PTR -184[rbp]
 	mov	rdx, rsp
@@ -392,11 +392,6 @@ main:
 	mov	eax, 0
 .L25:
 	mov	rsp, rbx
-.L28:
-	mov	rbx, QWORD PTR -56[rbp]
-	xor	rbx, QWORD PTR fs:40
-	je	.L29
-	call	__stack_chk_fail@PLT
 .L29:
 	lea	rsp, -40[rbp]
 	pop	rbx
