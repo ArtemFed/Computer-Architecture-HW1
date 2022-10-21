@@ -13,12 +13,12 @@ print_arr:
 	push	rbp
 	mov	rbp, rsp
 	sub	rsp, 32
-	mov	QWORD PTR -24[rbp], rdi
-	mov	DWORD PTR -28[rbp], esi
+	mov	QWORD PTR -24[rbp], rdi		# -24 = B[] копирует входной параметр rdi
+	mov	DWORD PTR -28[rbp], esi		# -28 = length копирует входной параметр esi
 	lea	rdi, .LC0[rip]
 	mov	eax, 0
 	call	printf@PLT
-	mov	r12d, 0		# i в for
+	mov	r12d, 0		# r12d - итерируемая переменная i в for
 	jmp	.L2
 .L3:
 	lea	rdx, 0[0+rax*4]
@@ -27,9 +27,9 @@ print_arr:
 	mov	esi, DWORD PTR [rax]
 	lea	rdi, .LC1[rip]
 	call	printf@PLT
-	add	r12d, 1
+	add	r12d, 1		# r12d увеличиваем значение итератора на 1
 .L2:
-	mov	eax, r12d
+	mov	eax, r12d		# eax копирует итерируемую переменную для сравнения
 	cmp	eax, DWORD PTR -28[rbp]
 	jl	.L3
 	mov	edi, 10
