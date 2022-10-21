@@ -72,8 +72,8 @@
       - mov QWORD PTR -256[rbp], rdx
       - mov QWORD PTR -248[rbp], 0
 *     Удалены лишние команды перед созданием массива:
-*     - movsx rdx, eax
-*     - sub rdx, 1	
+      - movsx rdx, eax
+      - sub rdx, 1	
 
 ###     C регистрами
 *     Были добавлены r12d вместо итераторов i
