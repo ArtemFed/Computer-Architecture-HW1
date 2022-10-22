@@ -140,16 +140,16 @@ __Использование аргументов командной строк�
 <br/>
 
 ### 3. _Решение на Cи c таймером и циклом на 10млн итераций:_
-> * [__main_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/main_timer.c)
-> * [__task_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/task_timer.c)
-> * [__print_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/print_timer.c)
+> * [__main_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/main.c)
+> * [__task_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/task_timer.c)
+> * [__print_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/print_timer.c)
 
 <br/>
 
 ### 4. _Модифицированное решение на ассемблере c таймером и циклом на 10млн итераций:_
-> * [__main_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/main_timer_mod.s)
-> * [__task_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/task_timer_mod.s)
-> * [__print_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/print_timer_mod.s)
+> * [__main_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/Assembler_mod%20+%20timer/main_timer_mod.s)
+> * [__task_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/Assembler_mod%20+%20timer/task_timer_mod.s)
+> * [__print_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/Assembler_mod%20+%20timer/print_timer_mod.s)
 
 <br/>
 
