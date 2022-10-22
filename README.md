@@ -37,31 +37,30 @@ __Модифицированная программа:__
 
 ---- 
 
-# 5 баллов:
-### 1. Решение на Cи с передачей данных в функции через параметры + локальные переменные: <br/>
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c) <br/>
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c) <br/>
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c) <br/>
+# Отчёт 5 баллов:
+### 1. _Решение на Cи с передачей данных в функции через параметры + локальные переменные:_
+__В программе присутствуют две функции: task(*A[], length, *B[]) и print_arr(*B[], length) с соответствующими параметрами. Используются локальные переменные.__
+> * [__main.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c)
+> * [__task.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c)
+> * [__print.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c)
 
-### 2. Ассемблерная программа с комментариями описывающие передачу параметров и перенос результата +  комментарии, описывающие связь между параметрами языка Си и регистрами (стеком): <br/>
-> * [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/575d07832ba26218638b2f5db34342c96f6c4b02/Assembler_mod/variables_mod.s)
-> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
-> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
-> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
+### 2. _Ассемблерная программа с комментариями_:
+__Добавлены комментарии, описывающие передачу параметров и перенос возвращаемого результат__ <br/>
+__Была прокоментированна связь между параметрами языка Си и регистрами по правилам:__ <br/>
+> 1)  __eax/rax - для запоминания/аккумулирования данных__
+> 2)  __rdi - первый аргумент в функции / edi - argc__
+> 3)  __rsi/esi - второй аргумент в функции (esi - так как передаю "маленький" length, а не массив)__
+> 4)  __rdx - третий аргумент в функции__
+> 5)  __rcx - счётчик__
 
-### Отчёт:
-> * Вызовы уже существующих функций task(A[], length, B[]) и print_arr(B[], length) были прокомментированны, переходы к регистрам rdx, esi, rdi были отмечены.
-> * Была прокоментированна связь между параметрами языка Си и регистрами по правилам: <br/>
-    1)  eax/rax - для запоминания/аккумулирования данных  <br/>
-    2)  rdi - первый аргумент в функции / edi - argc <br/>
-    3)  rsi/esi - второй аргумент в функции (esi - так как передаю "маленький" length, а не массив) <br/>
-    4)  rdx - третий аргумент в функции <br/>
-    5)  rcx - счётчик <br/>
-> * [Ссылка на отчёт о модификациях](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/55f2b857d00237ee41008801a3ed50b3f8488e47/Assembler_mod/Readme.md)
+> * [__Список переменных в модифицированной программе__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/575d07832ba26218638b2f5db34342c96f6c4b02/Assembler_mod/variables_mod.s)
+> * [__main_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s)
+> * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s)
+> * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s)
 
 ---- 
 
-# 6 баллов:
+# Отчёт 6 баллов:
 ### 1. Решение на ассемблере с рефакторингом программы за счет максимального использования регистров процессор: <br/>
 > * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
 > * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
