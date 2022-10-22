@@ -62,6 +62,11 @@ __Была прокоментированна связь между параме
 
 # Отчёт 6 баллов:
 ### 1. Решение на ассемблере с рефакторингом программы за счет максимального использования регистров процессор: <br/>
+Изменения с регистрами:
+*   Добавлены r12d вместо перемеенных итераторов i в for (во всех файлах)
+*   Поток "input.txt" был сохранён в r11
+*   Поток "output.txt" был сохранён в r14
+
 > * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
 > * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
 > * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
