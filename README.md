@@ -38,6 +38,8 @@ __Модифицированная программа:__
 > * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s)
 > * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s)
 
+<br/>
+
 ### 4. _Тестирование:_
 > [__Ссылка__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Tests.md) <br/>
 > __По результатам трёх тестов сравнения программ на Ассемблере и Модифицированном Ассемблере можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что модификация программы проведена успешно.__
