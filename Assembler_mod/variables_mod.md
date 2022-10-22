@@ -1,4 +1,4 @@
-## main:
+# main:
 -56 = ??? - возможно удалить <br/>
 -72 = srand(sec.tv_nsec); <br/>
 -80 = struct timespec sec; <br/>
