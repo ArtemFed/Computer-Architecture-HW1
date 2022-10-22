@@ -1,7 +1,7 @@
 # Computer-Architecture-HW1
 Arrays and integer arithmetic <br/>
 
-<br/>
+
 ---- 
 <br/>
 
@@ -38,7 +38,7 @@ __Модифицированная программа:__
 > [__Ссылка__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Tests.md) <br/>
 > __По результатам трёх тестов сравнения программ на Ассемблере и Модифицированном Ассемблере можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что модификация программы проведена успешно.__
 
-<br/>
+
 ---- 
 <br/>
 
@@ -64,7 +64,7 @@ __Была прокоментированна связь между параме
 > * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s)
 > * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s)
 
-<br/>
+
 ---- 
 <br/>
 
@@ -87,7 +87,7 @@ __Изменения с регистрами:__
 > По результатам нескольких тестов сравнения программ на ассемблере и модифицированном ассемблере с регистрами можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что эквивалентная замена переменных на регистры в программе была проведена успешно.
 ### Отчёт:
 
-<br/>
+
 ---- 
 <br/>
 
@@ -112,7 +112,7 @@ __Изменения с регистрами:__
 > * Использование аргументов командной строки: 
 >   при вызове файла запуска с одним аргументов, он будет считаться длиной массива, который нужно прочитать из файла input.txt и вывести результат в output.txt, находящиеся в одной папке с файлом запуска (например: "./result.exe 5" => 5 = length и из input.txt будет прочитано 5 цифр в формате %d)
 
-<br/>
+
 ---- 
 <br/>
 
@@ -145,7 +145,7 @@ __Изменения с регистрами:__
 > *  [task_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/task_timer_mod.s)
 > *  [print_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/print_timer_mod.s)
 
-<br/>
+
 ---- 
 <br/>
 
