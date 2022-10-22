@@ -1,7 +1,8 @@
 # Для модификации была применена команда 
->     gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none name.c -o name.s
+>     gcc -O0 -Wall -masm=intel -S -fno-asynchronous-unwind-tables -fcf-protection=none name.с -o name.s
 После чего все файлы были отредактированны вручную:
 # main_mod.s
+
 ###    Бесполезные переприсваивания:
 *     - mov rax, rsp
       - mov rbx, rax 
@@ -73,10 +74,7 @@
       - mov QWORD PTR -248[rbp], 0
 *     Удалены лишние команды перед созданием массива:
       - movsx rdx, eax
-      - sub rdx, 1	
-
-###     C регистрами (на 5 баллов)
-*     Были добавлены r12d вместо перемеенных итераторов i в for
+      - sub rdx, 1
 
 # print_mod.s
 *     Удалён cdqe
@@ -87,13 +85,5 @@
       - mov eax, 0
       + mov esi, DWORD PTR [rax]
 
-###     C регистрами (на 5 баллов)
-*     Были добавлены r12d вместо перемеенных итераторов i в for
-*     Поток "input.txt" был сохранён в r11
-*     Поток "output.txt" был сохранён в r14
-
 # task_mod.s
 *     Удалены cdqe 
-
-###     C регистрами (на 5 баллов)
-*     Были добавлены r12d вместо перемеенной итератора i в for
