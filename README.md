@@ -31,7 +31,7 @@ __Программа промодифицирована флагами комп�
 > [__Список изменений__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/Readme.md)
 
 __Для удобства предоставляю новый список переменных:__
-> [__Список переменных в модифицированной программе__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/variables_mod.s)
+> [__Список переменных в модифицированной программе__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/variables_mod.md)
 
 __Модифицированная программа:__
 > * [__main_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s)
@@ -65,7 +65,7 @@ __Была прокоментированна связь между параме
 > 4)  __rdx - третий аргумент в функции__
 > 5)  __rcx - счётчик__
 
-> * [__Список переменных в модифицированной программе__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/575d07832ba26218638b2f5db34342c96f6c4b02/Assembler_mod/variables_mod.s)
+> * [__Список переменных в модифицированной программе__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/variables_mod.md)
 > * [__main_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s)
 > * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s)
 > * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s)
@@ -117,7 +117,7 @@ __Три единиицы компиляции: main_mod.s, task_mod.s, print_mo
 
 <br/>
 
-### 3. _Текстовые файлы:_
+### 3. _Текстовые файлы:_ (перед использованием скачайте их и поместите рядом с исполняемым файлом)
 > * [__input.txt__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/input.txt)
 > * [__output.txt__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/output.txt)
 
