@@ -140,7 +140,7 @@ __Три единиицы компиляции: main_mod.s, task_mod.s, print_mo
 <br/>
 
 ### 3. _Решение на Cи c таймером и циклом на 10млн итераций:_
-> * [__main_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/main.c)
+> * [__main_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/main_timer.c)
 > * [__task_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/task_timer.c)
 > * [__print_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer/print_timer.c)
 
@@ -166,6 +166,6 @@ __Три единиицы компиляции: main_mod.s, task_mod.s, print_mo
 
 | Тип программы  | Время работы первого теста  | Время работы второго теста  | Время работы третьего теста  | Размер исполняемого файла | Суммарное количество строк | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
-| [Программа на C с замером времени]()  | 4774мс  | 4415мс  | 2094мс  | 17KiB  | 96 строк  | 
-| [Программа на ассемблере без модификаций с замером времени]()  | 3776мс  | 3833мс  | 1735мс  | 16,9KiB  | 623 строк  | 
-| [Программа на ассемблере с модификациями с замером времени]()  | 1752мс  | 1766мс  | 1005мс  | 16,8KiB  | 580 строк  | 
+| [Программа на C с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer)  | 4774мс  | 4415мс  | 2094мс  | 17KiB  | 96 строк  | 
+| [Программа на ассемблере без модификаций с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/tree/main/Modification%20with%20timer/Assembler%20%2B%20timer)  | 3776мс  | 3833мс  | 1735мс  | 16,9KiB  | 623 строк  | 
+| [Программа на ассемблере с модификациями с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/Assembler_mod%20+%20timer)  | 1752мс  | 1766мс  | 1005мс  | 16,8KiB  | 580 строк  | 
