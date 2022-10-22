@@ -1,5 +1,5 @@
 # main:
--56 = ??? - возможно удалить <br/>
+-56 = канарейка <br/>
 -72 = srand(sec.tv_nsec); <br/>
 -80 = struct timespec sec; <br/>
 -88 = поток "output.txt" <br/>
