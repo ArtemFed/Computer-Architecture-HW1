@@ -13,6 +13,8 @@ __Написана программа на С, использующая 3 еди
 > * [__task.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/task.c)
 > * [__print.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/print.c)
 
+<br/>
+
 ### 2. _Немодифицированная ассемблерная программа с комментариями:_
 __Программа проассемблирована и откомпилирована без оптимизирующих опций:__
 > * [__main.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler/main.s)
@@ -21,6 +23,8 @@ __Программа проассемблирована и откомпилир�
 
 __Добавлены комментарии и удобный список, поясняющий эквивалентное представление переменных на С в Ассемблере.__
 > [__Список переменных__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler/variables.md)
+
+<br/>
 
 ### 3. _Модифицированная ассемблерная программа с комментариями:_
 __Программа промодифицирована флагами компиляции, затем изменена вручную:__
@@ -49,6 +53,8 @@ __В программе присутствуют две функции: task(*A[
 > * [__main.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/main.c)
 > * [__task.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/task.c)
 > * [__print.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/print.c)
+
+<br/>
 
 ### 2. _Ассемблерная программа с комментариями_:
 __Добавлены комментарии, описывающие передачу параметров и перенос возвращаемого результат__ <br/>
@@ -82,71 +88,84 @@ __Изменения с регистрами:__
 > * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s) <br/>
 > * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s) <br/>
 
+<br/>
+
 ### 2. Тестирование:
 > [__Ссылка__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Tests.md) <br/>
 > По результатам нескольких тестов сравнения программ на ассемблере и модифицированном ассемблере с регистрами можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что эквивалентная замена переменных на регистры в программе была проведена успешно.
-### Отчёт:
-
 
 ---- 
 <br/>
 
 
 # 7 баллов:
-### 1. Решение на Cи с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt): <br/>
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/main.c) <br/>
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/task.c) <br/>
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/print.c) <br/>
+### 1. _Решение на Cи с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt):_ <br/>
+Три единиицы компиляции: main.c, task.c, print.c:
+> * [__main.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/main.c) <br/>
+> * [__task.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/task.c) <br/>
+> * [__print.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/print.c) <br/>
 
-### 2. Решение на ассемблере с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt): <br/>
-> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s) <br/>
-> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s) <br/>
-> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s) <br/>
+<br/>
 
-### 3. Текстовые файлы:
-> * [input.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/input.txt)
-> * [output.txt](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/output.txt)
+### 2. _Решение на ассемблере с тремя единицами компиляции + использование аргументов коммандной строки для работы с файлами (ввод значения length для чтения элементов из input.txt):_ <br/>
+Использование аргументов командной строки: 
+>   При вызове файла запуска с одним аргументов, он будет считаться длиной массива. Именно столько чисел будет прочитано в формате %d из файла input.txt и будет выведен результат в output.txt. Подразумевается, что файлы находятся в одной папке с файлом запуска. Пример работы: "./result.exe 5" => 5 = length и из input.txt будет прочитано 5 цифр в формате %d.
 
-### Отчёт:
-> * Три единиицы компиляции: main.s, task.s, print.s
-> * Использование аргументов командной строки: 
->   при вызове файла запуска с одним аргументов, он будет считаться длиной массива, который нужно прочитать из файла input.txt и вывести результат в output.txt, находящиеся в одной папке с файлом запуска (например: "./result.exe 5" => 5 = length и из input.txt будет прочитано 5 цифр в формате %d)
+Три единиицы компиляции: main_mod.s, task_mod.s, print_mod.s:
+> * [__main_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s) <br/>
+> * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s) <br/>
+> * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s) <br/>
 
+<br/>
+
+### 3. _Текстовые файлы:_
+> * [__input.txt__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/input.txt)
+> * [__output.txt__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/output.txt)
 
 ---- 
 <br/>
 
-# 8 баллов:
-### 1. Решение на Cи c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/main.c) <br/>
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/task.c) <br/>
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/print.c) <br/>
+# Отчёт 8 баллов:
+### 1. _Решение на Cи c генератором случайного набора данных + интерфейс для расширения анализа командной строки:_
+> * [__main.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/main.c) <br/>
+> * [__task.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/task.c) <br/>
+> * [__print.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files/print.c) <br/>
 
-### 2. Решение на ассемблере c генератором случайного набора данных + интерфейс для расширения анализа командной строки: <br/>
-> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s) <br/>
-> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s) <br/>
-> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s) <br/>
+<br/>
 
-### 3. Решение на Си и на модифицированном ассемблере c внутренним циклом на 10млн проходов для автоматического замера времени: <br/>
-> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s) <br/>
-> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s) <br/>
-> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s) <br/>
+### 2. _Модифицированное решение на ассемблере c генератором случайного набора данных + интерфейс для расширения анализа командной строки:_
+> * [__main_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/main_mod.s) <br/>
+> * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/task_mod.s) <br/>
+> * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod/print_mod.s) <br/>
 
-### 3. Тестирование:
-> * [Ссылка](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Tests.md)
+<br/>
 
-### Отчёт:
-> 1) Си <br/>
-> *  [main_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/main_timer.c)
-> *  [task_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/task_timer.c)
-> *  [print_timer.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/print_timer.c)
-> 2) Ассемблер <br/>
-> *  [main_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/main_timer_mod.s)
-> *  [task_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/task_timer_mod.s)
-> *  [print_timer_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/print_timer_mod.s)
+### 3. _Решение на Cи c таймером и циклом на 10млн итераций:_
+> * [__main_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/main_timer.c)
+> * [__task_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/task_timer.c)
+> * [__print_timer.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files_timer/print_timer.c)
 
+<br/>
+
+### 4. _Модифицированное решение на ассемблере c таймером и циклом на 10млн итераций:_
+> * [__main_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/main_timer_mod.s)
+> * [__task_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/task_timer_mod.s)
+> * [__print_timer_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_timer/print_timer_mod.s)
+
+<br/>
+
+### 5. _Тестирование:_
+> * [__Ссылка__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Tests.md)
 
 ---- 
 <br/>
 
 # 9 баллов
+> Первый тест: размер 100, 10млн отработок function. <br/>
+> Второй тест: размер 100, 10млн отработок function. <br/>
+> Третий тест: размер  50, 10млн отработок function. <br/>
+| Тип программы  | Время работы первого теста  | Время работы второго теста  | Время работы третьего теста  | Размер исполняемого файла | Суммарное количество строк | 
+| :---: | :---: | :---: | :---: | :---: | :---: | 
+| [Программа на C с замером времени](https://github.com/Bishop-Y/ACS_HomeWork_1/tree/main/Program%20on%20C%20with%20clock)  | 5245мс  | 2702мс  | 487мс  | 20кб  | 111 строк  | 
+| [Программа на ассемблере без модификаций с замером времени](https://github.com/Bishop-Y/ACS_HomeWork_1/tree/main/ASM%20without%20modifications%20with%20clock)  | 5321мс  | 2817мс  | 480мс  | 20кб  | 759 строк  | 
+| [Программа на ассемблере с модификациями с замером времени](https://github.com/Bishop-Y/ACS_HomeWork_1/tree/main/ASM%20with%20clock)  | 3111мс  | 1733мс  | 292мс  | 20кб  | 676 строк  | 
