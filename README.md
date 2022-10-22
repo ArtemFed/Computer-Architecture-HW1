@@ -4,33 +4,36 @@ Arrays and integer arithmetic <br/>
 ----
 
 # Отчёт 4 балла:
-### 1. Приведено решение задачи на Cи: <br/>
-> Написана программа на С, использующая 3 единицы компиляции (main.c task.c print.c):
-> * [main.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c)
-> * [task.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c)
-> * [print.c](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c)
+### 1. _Приведено решение задачи на Cи:_
+__Написана программа на С, использующая 3 единицы компиляции (main.c task.c print.c):__
+> * [__main.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/main.c)
+> * [__task.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/task.c)
+> * [__print.c__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/C%20Files/print.c)
 
-### 2. Немодифицированная ассемблерная программа с комментариями: <br/>
-Программа проассемблированна и откомпилированна без оптимизирующих опций:
->       * [main.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s)
->       * [task.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s)
->       * [print.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s) <br/>
-Добавлены комментарии и удобный список, поясняющий эквивалентное представление переменных на С в Ассемблере.
-* [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/4a77f269eec74541d826cf8e578a482e3172365c/Assembler/variables.md)
+### 2. _Немодифицированная ассемблерная программа с комментариями:_
+__Программа проассемблирована и откомпилирована без оптимизирующих опций:__
+> * [__main.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/main.s)
+> * [__task.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/task.s)
+> * [__print.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/1b666c6c6c8fda0c04d10f0160e4615a3ae3f59c/Assembler/print.s)
 
-### 3. Модифицированная ассемблерная программа с комментариями: <br/>
-> * [Список переменных](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/575d07832ba26218638b2f5db34342c96f6c4b02/Assembler_mod/variables_mod.s)
-> * [main_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s) <br/>
-> * [task_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s) <br/>
-> * [print_mod.s](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s) <br/>
+__Добавлены комментарии и удобный список, поясняющий эквивалентное представление переменных на С в Ассемблере.__
+> [__Список переменных__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/4a77f269eec74541d826cf8e578a482e3172365c/Assembler/variables.md)
 
-### 4. Тестирование:
-> * [Ссылка](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/85764be93cbb70bdb0302ecd95a2dd665eb67fdc/Tests.md)
+### 3. _Модифицированная ассемблерная программа с комментариями:_
+__Программа промодифицирована флагами компиляции, затем изменена вручную:__
+> [__Список изменений__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/6c17edda1c5871b19e937e6682bb9f70a2a38ca7/Assembler_mod/Readme.md)
 
-> * Добавлены комментарии и [удобный список](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/14fbe0cf39ff135e8b42f55b99884ccdb7081aee/Assembler/variables.md), поясняющий эквивалентное представление переменных на С в Ассемблере.
-> * Программа промоди
-> * По результатам трёх тестов сравнения программ на ассемблере и модифицированном ассемблере можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что модификация программы проведена успешно. <br/>
-> * [Ссылка на отчёт о модификациях](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/55f2b857d00237ee41008801a3ed50b3f8488e47/Assembler_mod/Readme.md)
+__Для удобства предоставляю новый список переменных:__
+> [__Список переменных__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/575d07832ba26218638b2f5db34342c96f6c4b02/Assembler_mod/variables_mod.s)
+
+__Модифицированная программа:__
+> * [__main_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/main_mod.s)
+> * [__task_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/task_mod.s)
+> * [__print_mod.s__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/007c41d432d38f47f7290f8a19263a648a7b1b5b/Assembler_mod/print_mod.s)
+
+### 4. _Тестирование:_
+> [__Ссылка__](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/85764be93cbb70bdb0302ecd95a2dd665eb67fdc/Tests.md) <br/>
+> __По результатам трёх тестов сравнения программ на Ассемблере и Модифицированном Ассемблере можно легко заметить, что программы отработали идетично и без ошибок, поэтому делаем вывод, что модификация программы проведена успешно.__
 
 ---- 
 
