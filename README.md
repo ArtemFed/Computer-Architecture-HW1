@@ -1,4 +1,5 @@
-# Computer-Architecture-HW1
+# Computer-Architecture-HW1. <br/>
+Выполнил Федоров Артём БПИ217.
 Arrays and integer arithmetic <br/>
 
 
