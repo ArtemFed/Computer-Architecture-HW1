@@ -222,5 +222,5 @@ __Модифицированная программа:__
 | Тип программы  | Время работы первого теста  | Время работы второго теста  | Время работы третьего теста  | Размер исполняемого файла | Суммарное количество строк | 
 | :---: | :---: | :---: | :---: | :---: | :---: | 
 | [Программа на C с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/C%20+%20timer)  | 4774мс  | 4415мс  | 2094мс  | 17KiB  | 96 строк  | 
-| [Программа на ассемблере без модификаций с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/tree/main/Modification%20with%20timer/Assembler%20%2B%20timer)  | 3776мс  | 3833мс  | 1735мс  | 16,9KiB  | 623 строк  | 
-| [Программа на ассемблере с модификациями с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/Assembler_mod%20+%20timer)  | 1752мс  | 1766мс  | 1005мс  | 16,8KiB  | 580 строк  | 
+| [Программа на ассемблере без модификаций с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/tree/main/Modification%20with%20timer/Assembler%20%2B%20timer)  | 3776 ms  | 3833 ms  | 1735 ms  | 16,9 KiB  | 623 строк  | 
+| [Программа на ассемблере с модификациями с замером времени](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Modification%20with%20timer/Assembler_mod%20+%20timer)  | 1752 ms  | 1766 ms  | 1005 ms  | 16,8 KiB  | 580 строк  | 
