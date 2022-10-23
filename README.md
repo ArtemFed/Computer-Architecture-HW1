@@ -9,9 +9,9 @@
 ## Структура репозитория:
 * [C Files](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/C%20Files) - содержит реализацию задачи на C
 
-* [Assempler](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assempler) - содержит __не__ модифицированный код на Ассемблере
+* [Assembler](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler) - содержит __не__ модифицированный код на Ассемблере
 
-* [Assembly_mod](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assempler_mod) - содержит модифицированный код на Ассемблере c комментариями к коду
+* [Assembler_mod](https://github.com/ArtemFed/Computer-Architecture-HW1/blob/main/Assembler_mod) - содержит модифицированный код на Ассемблере c комментариями к коду
 
 * [Modification with timer](https://github.com/ArtemFed/Computer-Architecture-HW1/tree/main/Modification%20with%20timer) - содержит три папки: 
 > + Код на Си с таймером и циклом
